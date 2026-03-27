@@ -126,7 +126,11 @@ employee_id | full_name | email                | salary | salary_band
 
 ## Logging
 
-Nothing sophisticated here — the job prints status messages at each stage so you can follow along: when it starts, when transforms finish, whether the database load succeeded, and any errors if something goes wrong.
+Logging is implemented using simple print statements to track the progress of the ETL pipeline. 
+
+The job outputs status messages at each major stage, including data loading, transformation, and database write operations. It also reports any errors encountered during execution.
+
+This approach ensures basic traceability and helps in debugging and monitoring the pipeline execution.
 
 ---
 
