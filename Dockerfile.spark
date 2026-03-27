@@ -1,0 +1,8 @@
+FROM apache/spark:3.5.0
+
+USER root
+
+RUN curl --retry 5 --retry-delay 5 -o /opt/spark/jars/postgresql-42.7.3.jar \
+https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.3/postgresql-42.7.3.jar
+
+USER spark
