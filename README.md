@@ -51,7 +51,8 @@ docker compose up --build
 
 **2. Generate the sample employee data**
 ```bash
-python generate_data.py
+The sample dataset was generated using Python libraries such as Faker and Pandas in Google Colab.
+Faker was used to create realistic synthetic employee data, including names, emails, addresses, and job details, while Pandas was used to structure and export the data into a CSV file.The generated dataset (`employees_raw.csv`) is used as the input for the Spark ETL pipeline.
 ```
 
 **3. Run the Spark ETL job**
